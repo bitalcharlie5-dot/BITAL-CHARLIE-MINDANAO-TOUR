@@ -1,0 +1,121 @@
+body{
+font-family:Arial;
+margin:0;
+background:#e6f2ff;
+text-align:center;
+font-size:20px;
+}
+
+#loginPage{
+background:white;
+width:300px;
+margin:50px auto;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+}
+
+#mainPage{
+display:none;
+}
+
+header{
+position:relative;
+background:None;
+font-size:x-large;
+color:black;
+padding:50px;
+}
+
+.hero-img{
+width:100%;
+height:100%;
+object-fit:cover;
+position:absolute;
+top:0;
+left:0;
+z-index:-1;
+opacity:0.3;
+}
+
+button{
+background:#008cba;
+color:white;
+padding:10px;
+border:none;
+cursor:pointer;
+border-radius:5px;
+}
+
+button:hover{
+background:#005f73;
+}
+
+#spots{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+padding:20px;
+}
+
+.card{
+background:white;
+width:230px;
+padding:10px;
+border-radius:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.2);
+}
+
+.card img{
+width:100%;
+height:140px;
+object-fit:cover;
+border-radius:8px;
+}
+
+.booking{
+background:white;
+width:320px;
+margin:auto;
+padding:20px;
+border-radius:10px;
+}
+
+input, select{
+width:90%;
+padding:8px;
+margin:6px;
+}
+
+#receipt{
+background:white;
+width:320px;
+margin:20px auto;
+padding:20px;
+border-radius:10px;
+text-align:left;
+}
+
+#bookingTable{
+width:95%;
+margin:20px auto;
+border-collapse:collapse;
+background:white;
+}
+
+#bookingTable th{
+background:#008cba;
+color:white;
+padding:20px;
+width:30px;
+}
+
+#bookingTable td{
+padding:10px;
+border:1px solid #ccc;
+}
+
+#bookingTable tr:nth-child(even){
+background:#f2f2f2;
+}

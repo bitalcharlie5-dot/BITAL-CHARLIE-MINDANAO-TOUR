@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>(BITAL) Mindanao Tourist Booking</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="loginPage">
+<h2>Login / Register</h2>
+<input type="text" id="username" placeholder="Username" required>
+<input type="password" id="password" placeholder="Password" required>
+<input type="text" id="phone" placeholder="Phone Number">
+<input type="email" id="email" placeholder="Email">
+<input type="text" id="address" placeholder="Address">
+
+<button onclick="login()">Enter Website</button>
+</div>
+
+<div id="mainPage">
+
+<header>
+<img src="Guyam.jpeg" class="hero-img">
+<h1>Mindanao Tourist Destination</h1>
+<p>Explore, Book, and Experience Beauty</p>
+</header>
+
+<section class="places">
+<button onclick="showSpots('davao')">Davao</button>
+<button onclick="showSpots('zamboanga')">Zamboanga</button>
+<button onclick="showSpots('cdo')">Cagayan de Oro</button>
+<button onclick="showSpots('bukidnon')">Bukidnon</button>
+<button onclick="showSpots('surigao')">Surigao</button>
+</section>
+
+<h2>Tourist Spots</h2>
+<section id="spots"></section>
+
+<h2>Booking Form</h2>
+<section class="booking">
+
+<form id="bookingForm">
+
+<input type="text" id="name" placeholder="Full Name" required>
+<input type="number" id="age" placeholder="Age" required>
+<input type="text" id="userAddress" placeholder="Address" required>
+
+<input type="text" id="spot" placeholder="Selected Spot" readonly>
+
+<select id="room">
+<option>Standard Room</option>
+<option>Deluxe Room</option>
+<option>Family Room</option>
+</select>
+
+<select id="food">
+<option>Breakfast</option>
+<option>Lunch</option>
+<option>Dinner</option>
+<option>Full Package</option>
+</select>
+
+<input type="date" id="date" required>
+<input type="time" id="time" required>
+
+<input type="number" id="days" placeholder="Days" required>
+<input type="number" id="guests" placeholder="Guests" required>
+
+<input type="text" id="price" placeholder="Price" readonly>
+
+<button type="submit">Book Now</button>
+
+</form>
+
+</section>
+
+<h2>Receipt</h2>
+<div id="receipt"></div>
+
+<h2>Booking List (Visitor Records)</h2>
+
+<table id="bookingTable">
+<thead>
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Address</th>
+<th>Place</th>
+<th>Room</th>
+<th>Food</th>
+<th>Date</th>
+<th>Time</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
